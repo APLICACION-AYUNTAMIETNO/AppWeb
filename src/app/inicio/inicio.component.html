@@ -1,0 +1,22 @@
+<main>
+<div class="area">
+    <div class="logo"><img src="assets/logo-innovasur-rojo.png" alt="Logo Innovasur"></div>
+    <form [formGroup]="identificarempresaform" (ngSubmit)="subir()" class="empresa">
+        <div class="celda">
+            <p *ngIf="identificadorcorrecto; else error" class="texto">Introduce el identificador de tu empresa</p>
+            <ng-template #error><p class="texto error">Identificador Errorneo</p></ng-template>
+        </div>
+        <div class="celda">
+            <input type="text" class="contenedor" formControlName="idempresa" id="idempresa" name="idempresa" placeholder="ID">    
+        </div>  
+        <div class="celda">
+            <button class="button entrar" type="submit">Entrar</button>
+        </div>
+        <div class="celda">
+            <button class="button info" type="submit" (click)="masinformacion()">Más Informacion</button>
+        </div>
+        
+    </form>
+    
+</div>
+</main>

@@ -1,4 +1,4 @@
-* {
+/* * {
 margin: 0;
 box-sizing: border-box;
 font-family: sans-serif;
@@ -13,8 +13,8 @@ font-family: sans-serif;
   width: 100%;
   top:0;
   left:0;
-  /* border-color: black;
-  border-style: inset; */
+   border-color: black;
+  border-style: inset; 
 }
 
 .nav{
@@ -22,8 +22,8 @@ font-family: sans-serif;
   justify-content: space-between;
   flex-direction: row;
   height: 100%;
-  /* border-color: black;
-  border-style: inset; */
+   border-color: black;
+  border-style: inset; 
 
 }
 
@@ -32,32 +32,32 @@ font-family: sans-serif;
   color:white;
   line-height: 100%;
   padding: 10px;
-  /* border-color: white;
-  border-style: inset; */
+   border-color: white;
+  border-style: inset; 
 }
 .nav-menu-link:hover{
   background-color: #A92E25;
-  /* border-color: white;
-  border-style: inset; */
+   border-color: white;
+  border-style: inset; 
 }
 
 img{
   width: 80%;
   height: 57%;
-  /* border-color: black;
-  border-style: inset; */
+   border-color: black;
+  border-style: inset; 
 }
 
 .logo{
   font-weight: bold;
   width: 12%;
-  height: 100%;/* Altura del contenedor para que el centrado vertical funcione*/
-  display: flex; /* Activa flexbox en el contenedor */
-  justify-content: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
+  height: 100%; // Altura del contenedor para que el centrado vertical funcione
+  display: flex; // Activa flexbox en el contenedor 
+  justify-content: center; //* Centra horizontalmente los elementos 
+  align-items: center; // Centra verticalmente los elementos 
   margin-left: 4px;
-  /* border-color: white;
-  border-style: inset; */
+   border-color: white;
+  border-style: inset; 
 
 }
 
@@ -71,8 +71,8 @@ img{
   line-height: 100%;
   list-style: none;
   padding-right: 1%;
-  /* border-color: black;
-  border-style: inset; */
+  border-color: black;
+  border-style: inset;
 
 }
 
@@ -80,13 +80,13 @@ img{
 
 .nav-menu-item{
   list-style: none;
-  height: 100%;/* Altura del contenedor para que el centrado vertical funcione*/
-  display: flex; /* Activa flexbox en el contenedor */
-  justify-content: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
+  height: 100%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   margin-left: 20px;
-  /* border-color: black;
-  border-style: inset; */
+  border-color: black;
+  border-style: inset; 
 }
 
 @media (max-width:768px){
@@ -97,8 +97,8 @@ img{
     width: 100%;
     top:0;
     left:0;
-    /* border-color: black;
-    border-style: inset; */
+     border-color: black;
+    border-style: inset;
   }
 
   .nav{
@@ -106,8 +106,8 @@ img{
     justify-content: space-between;
     flex-direction: row;
     height: 100%;
-    /* border-color: black;
-    border-style: inset; */
+     border-color: black;
+    border-style: inset; 
 
 
   }
@@ -122,27 +122,27 @@ img{
   }
   .nav-menu-link:hover{
     background-color: #A92E25;
-    /* border-color: white;
-    border-style: inset; */
+     border-color: white;
+    border-style: inset; 
   }
 
   img{
     width: 80%;
     height: 57%;
-    /* border-color: black;
-    border-style: inset; */
+    border-color: black;
+    border-style: inset; 
   }
 
   .logo{
     font-weight: bold;
     width: 12%;
-    height: 100%;/* Altura del contenedor para que el centrado vertical funcione*/
-    display: flex; /* Activa flexbox en el contenedor */
-    justify-content: center; /* Centra horizontalmente los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     margin-left: 4px;
-    /* border-color: white;
-    border-style: inset; */
+     border-color: white;
+    border-style: inset; 
 
   }
 
@@ -171,11 +171,22 @@ img{
 
   .nav-menu-item{
     list-style: none;
-    height: 100%;/* Altura del contenedor para que el centrado vertical funcione*/
+    height: 100%;
     width: 100%;
-    display: flex; /* Activa flexbox en el contenedor */
-    justify-content: center; /* Centra horizontalmente los elementos */
+    display: flex; 
+    justify-content: center; 
     border-color: blue;
     border-style: inset;
+  }
+} 
+*/
+
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; /* Comienza completamente transparente */
+  }
+  100% {
+    opacity: 1; /* Termina completamente visible */
   }
 }
