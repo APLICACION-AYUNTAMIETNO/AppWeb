@@ -70,8 +70,8 @@ main {
     /*background-color: black;*/
 
     color: #9c9c9c;
-    height: 95%;
-    width: 95%;
+    height: 10%;
+    width: 100%;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     /* Sombra sutil */
     align-content: center;
@@ -80,13 +80,13 @@ main {
     border-radius: calc(0.3vw + 0.3vh);
     font-size: calc(1vw + 0.5vh);
     /* Tamaño de fuente adaptativo */
-    /* border-color: black;
-    border-style: inset; */
-    border-style: solid;
-    border-color: #9c9c9c;
+    
+    
     font-weight: bold;
     animation: aparecer 2s forwards;
     /* Duración de 2 segundos, y mantener el estado final */
+    /* border-color: black;
+    border-style: inset; */
 }
 
 .celda {
@@ -116,14 +116,14 @@ main {
 .button {
     color: #F7F7F7;
     background-color: #FF4135;
-    height: 95%;
-    width: 95%;
+    height: 83%;
+    width: 83%;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     /* Sombra sutil */
     align-content: center;
     text-align: center;
     text-justify: center;
-    font-size: calc(1vw + 1vh);
+    font-size: calc(2vw + 2vh);
     /* Tamaño de fuente adaptativo */
     border-radius: calc(0.3vw + 0.3vh);
     font-weight: bold;
@@ -141,7 +141,7 @@ button:hover {
 
 img {
     width: 100%;
-    height: 100%;
+    height: 20%;
     object-fit: contain;
     /* Ajusta la imagen proporcionalmente dentro del contenedor */
     opacity: 0;
@@ -154,12 +154,13 @@ img {
 
 .logo {
     font-weight: bold;
-    width: 56vw;
+    width: 100%;
     text-transform: uppercase;
-    height: 50vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    
     font-family: 'Futurista'; 
     color: #FF4135;
 
@@ -168,14 +169,27 @@ img {
 
 }
 
-.empresa {
+.textologo{
+    display: flex;
+    
+    height: 37%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 250%;  /* Tamaño de fuente adaptativo */
+    /* border-color: black;
+    border-style: inset; */
+}
+
+.menu {
     font-weight: bold;
-    width: 30vw;
+    width: 80%;
     /*valia antes 21*/
     height: 30vh;
     /* Altura del contenedor para que el centrado vertical funcione */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -209,6 +223,26 @@ img {
 
 .info:hover {
     background-color: #cccccc;
+}
+
+.colas{
+    background-color:  #9c9c9c;
+}
+
+.colas:hover{
+    background-color: #cccccc;
+}
+
+.tickets{
+    background-color:  #9c9c9c;
+}
+
+.tickets:hover{
+    background-color: #cccccc;
+}
+
+.identificarte{
+
 }
 
 @media (max-width: 768px) {

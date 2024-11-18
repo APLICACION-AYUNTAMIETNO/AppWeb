@@ -3,21 +3,18 @@
 </header>
 <main>
 <div class="area">
-    <div class="logo"><h1>{{empresaNombre}}</h1></div>
-    <form class="empresa">
+    <div class="logo"><h1 class="textologo">{{empresaNombre}}</h1><p class="texto">{{empresaId}}</p>
+    </div>
+    <form class="menu">
         <div class="celda">
-            <p class="texto">Introduce el identificador de tu empresa</p>
+            <button class="button colas" [routerLink]="['colas']" >Colas</button>
         </div>
         <div class="celda">
-            <input type="text" class="contenedor" formControlName="idempresa" id="idempresa" name="idempresa" placeholder="ID">    
-        </div>  
-        <div class="celda">
-            <button class="button entrar" type="submit">Entrar</button>
+            <button class="button tickets" [routerLink]="['tickets']" >Tickets</button>
         </div>
         <div class="celda">
-            <button class="button info" type="submit" >Más Informacion</button>
-        </div>
-        
+            <button class="button identificarte" [routerLink]="['identificarte']"  >Identificarte</button>
+        </div>        
     </form>
     
 </div>

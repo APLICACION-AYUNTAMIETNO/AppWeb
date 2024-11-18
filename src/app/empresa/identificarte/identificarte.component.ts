@@ -1,18 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
-import { InicioService } from '../inicio.service';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { InicioService } from '../../inicio.service';
 
 @Component({
-  selector: 'app-empresa',
+  selector: 'app-identificarte',
   standalone: true,
   imports: [RouterModule],
-  templateUrl: './empresa.component.html',
-  styleUrl: './empresa.component.css'
-  
+  templateUrl: './identificarte.component.html',
+  styleUrl: './identificarte.component.css'
 })
-export class EmpresaComponent implements OnInit {
-
+export class IdentificarteComponent {
   empresaId: string | null = null;
   empresaNombre: string | null = null; // Puedes definir un tipo si conoces la estructura de la empresa
   error: string | null = null;
@@ -52,5 +49,4 @@ export class EmpresaComponent implements OnInit {
       );
     } 
     
-  
 }
