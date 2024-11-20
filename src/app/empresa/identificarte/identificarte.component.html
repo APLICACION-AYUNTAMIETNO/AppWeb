@@ -7,18 +7,18 @@
             <h1>Identificate en</h1>
             <h1 class="nombreempresa">{{empresaNombre}}</h1>
         </div>        
-    <form class="contenedor">
+    <form [formGroup]="iniciasesionform"(ngSubmit)="identificarte()" class="contenedor">
         <div class="celda">
             <p  class="texto">Introduce tu DNI</p>
         </div>
         <div class="celda">
-            <input type="text"  class="campo" formControlName="idempresa" id="idempresa" name="idempresa" placeholder="DNI">
+            <input type="text"  class="campo" formControlName="id"  id="idempresa" name="idempresa" placeholder="DNI">
         </div>
         <div class="celda">
             <p  class="texto">Introduce tu contraseña</p>
         </div>
         <div class="celda">
-            <input type="text" class="campo" formControlName="idempresa" id="idempresa" name="idempresa" placeholder="xxxxxxxx">
+            <input type="password" class="campo" formControlName="contrasena" id="idempresa" name="idempresa" placeholder="●●●●●●●●">
         </div>
         <div class="celda">
             <button class="button">Indentificate</button>

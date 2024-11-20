@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
 import { InicioComponent } from './inicio/inicio.component';
-import { HttpClient, HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule, provideHttpClient, withInterceptors } from '@angular/common/http';
+
   // Importa el módulo de rutas
 
 @NgModule({
@@ -14,11 +15,11 @@ import { HttpClient, HttpClientModule, provideHttpClient } from '@angular/common
   imports: [AppComponent,
     BrowserModule,
     AppRoutingModule, 
-    InicioComponent,
+    InicioComponent
     
   ],
  
-  providers: [],
+  providers: [ ],
   bootstrap: []
 })
 export class AppModule { }

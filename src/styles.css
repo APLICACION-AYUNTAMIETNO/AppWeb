@@ -2,8 +2,9 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: max(1900px,99vw);
     height: 2000px;
     top: 0;
     left: 0;
+  
 }

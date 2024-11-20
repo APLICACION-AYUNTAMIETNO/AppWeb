@@ -1,0 +1,30 @@
+<header>
+    <div class="usuario">
+        <p class="nombre">{{usuario.nombre}}</p>
+        <p class="rol">{{usuario.rol}}</p>
+    </div> 
+
+    <div class="opciones">
+        <button class="menu-btn" [routerLink]="['/empleado/departamentos']">Departamentos
+            <div class="dropdown">
+                <a  [routerLink]="['/empleado/departamentos']">Buscar</a>
+                <a href="#opcion2">Crear</a>
+        
+            </div>
+        </button>
+        <button class="menu-btn" [routerLink]="['/empleado/tecnicos']">Técnicos
+            <div class="dropdown" >
+                <a [routerLink]="['/empleado/tecnicos']">Buscar</a>
+                <a href="#opcion2">Crear</a>
+        
+            </div>
+        </button>
+        <button class="menu-btn" [routerLink]="['/empleado/micuenta']">Mi Cuenta
+            <div class="dropdown">
+                <a [routerLink]="['/empleado/modificarcuenta']">Modificar Cuenta</a>
+                <a [routerLink]="['']" (click)="cerrarsesion()">Cerrar Sesion</a>       
+            </div>
+        </button>
+    </div>
+</header>
+

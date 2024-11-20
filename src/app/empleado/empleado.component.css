@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        /* Comienza completamente transparente */
+    }
+
+    100% {
+        opacity: 1;
+        /* Termina completamente visible */
+    }
+}
+
+@font-face {
+    font-family: 'Futurista';
+    src: url('/assets/fuente.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+header {
+    background-color: #FF4135;
+    width: 100%;
+    position: fixed;
+    min-height: 5vh;
+    height: 80px; /* Altura relativa al viewport */
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    /* border-color: black;
+    border-style: inset; */
+    z-index: 3;
+}
+
+
+
+
+.usuario {
+    height: 100%;
+    padding-left: 10px;
+    width: calc(30vw + 100px);
+    color: #F7F7F7;
+    /* border-color: black;
+    border-style: inset; */
+    
+}
+
+.opciones {
+    height: 100%;
+    width: calc(30vw + 100px);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* border-color: black;
+    border-style: inset; */
+
+}
+.menu-btn {
+    background-color: #FF4135;
+    color: #F7F7F7;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: calc(1vw + 10px);
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    align-items: center;
+  }
+  
+  .menu-btn:hover {
+    background-color: #ff695f; /* Efecto hover */
+  }
+  
+  .dropdown {
+    display: none; /* Ocultar por defecto */
+    position: absolute;
+    top: 100%; /* Aparece debajo del botón */
+    right: 1%;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: clamp(10px,20px,30px);
+    width:calc(10vw + 30px);
+  }
+  
+  .dropdown a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  .dropdown a:hover {
+    background-color: #ddd; /* Efecto hover */
+  }
+  
+  /* Mostrar el dropdown al pasar el mouse sobre el botón */
+  .menu-btn:hover .dropdown {
+    display: block;
+  }
+
+.nombre {
+    height: 50%;
+    width: 100%;
+    font-size: calc(0.3vw + 10px);
+    object-fit: fill;
+    display: flex;
+    align-items: center;
+    /* border-color: black;
+    border-style: inset; */
+}
+
+.rol {
+    height: 50%;
+    width: 100%;
+    font-size: calc(0.06vw + 10px);
+    /* border-color: black;
+    border-style: inset; */
+    object-fit: fill;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+main {
+    background-color: #F7F7F7;
+    position: absolute;
+    width: 100%; /* Ajusta teniendo en cuenta el margen izquierdo */
+    height: calc(100% - max(5vh, 80px)); /* Resta la altura del espacio superior */
+    top: max(5vh, 80px); /* Margen superior dinámico */
+    left: 0;
+  
+    /* Flexbox para centrar el contenido */
+    display: flex;
+    
+    /* Opcional: sombra sutil para mayor contraste */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    justify-content: center;
+   
+ }
+
+
+.contenedor {
+    margin-top: 50px;
+    height: 50%;
+    position: relative;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrado del contenido */
+
+    /* Centrado del contenido */
+
+    /* border-color: red;
+    border-style: inset; */
+}
+
+.area {
+    height: 100%;
+    width: 1000px;
+    /* border-color: rgb(244, 0, 0);
+    border-style: inset; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.celda {
+
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(0.3vw + 0.3vh);
+    /* border-color: black;
+    border-style: inset;  */
+}
+
+.texto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: grey;
+
+}
+
+.campo {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.contenedorfuncion {
+    display: flex;
+    margin-top: 50px;
+    /* border-color: black;
+    border-style: inset; */
+}
+
+h1 {
+    margin-left: 11px;
+}
+
+.nombreempresa {
+    text-transform: uppercase;
+    color: #FF4135;
+}
+
+.button {
+    color: #F7F7F7;
+    background-color: #FF4135;
+    height: 100%;
+    width: 100%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    align-content: center;
+    text-align: center;
+    text-justify: center;
+    font-size: calc(1vw + 1vh);
+    /* Tamaño de fuente adaptativo */
+    border-radius: calc(0.3vw + 0.3vh);
+    font-weight: bold;
+    border-style: hidden;
+    animation: aparecer 2s forwards;
+    /* Duración de 2 segundos, y mantener el estado final */
+    /* border-color: black;
+    border-style: inset; */
+}

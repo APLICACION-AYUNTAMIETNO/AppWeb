@@ -13,7 +13,8 @@
             <button class="button tickets" [routerLink]="['tickets']" >Tickets</button>
         </div>
         <div class="celda">
-            <button class="button identificarte" [routerLink]="['identificarte']"  >Identificarte</button>
+            <button *ngIf="noestaidentificado; else identificado" class="button identificarte" [routerLink]="['identificarte']"  >Identificarte</button>
+            <ng-template #identificado><button class="button identificarte" [routerLink]="['/empleado']"  >Mi escritorio</button></ng-template>
         </div>        
     </form>
     

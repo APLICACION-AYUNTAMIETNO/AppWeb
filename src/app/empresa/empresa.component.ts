@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { InicioService } from '../inicio.service';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-empresa',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule,CommonModule],
   templateUrl: './empresa.component.html',
   styleUrl: './empresa.component.css'
   
@@ -16,7 +17,7 @@ export class EmpresaComponent implements OnInit {
   empresaId: string | null = null;
   empresaNombre: string | null = null; // Puedes definir un tipo si conoces la estructura de la empresa
   error: string | null = null;
-
+  noestaidentificado = localStorage.getItem('access_token')==null
   constructor(
     private route: ActivatedRoute,
     private inicioService: InicioService,
